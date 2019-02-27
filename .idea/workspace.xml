@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f11fb0a4-fb04-472d-ad91-38923dd63474" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_api_common_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_24_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_1_34_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_httpjson_0_51_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_datastore_v1_0_35_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_common_protos_1_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_iam_v1_0_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_credentials_0_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_oauth2_http_0_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_datastore_datastore_v1_proto_client_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_1_52_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_http_1_52_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_datastore_1_52_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_24_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_appengine_1_24_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_24_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson_1_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_protobuf_1_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_24_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_util_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_context_1_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_core_1_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_api_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_metrics_0_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_http_util_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_threeten_threetenbp_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeu-starter-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/StatsPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/data/Datastore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/data/Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/servlets/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/servlets/LoginStatusServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/servlets/LogoutServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/servlets/MessageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/google/codeu/servlets/StatsPageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/appengine-generated/datastore-indexes-auto.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/appengine-generated/local_db.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/appengine-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/data/Datastore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/data/Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/servlets/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/servlets/LoginStatusServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/servlets/LogoutServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/servlets/MessageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/classes/com/google/codeu/servlets/StatsPageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/index.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/animal-sniffer-annotations-1.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/api-common-1.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/datastore-v1-proto-client-1.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/gax-1.34.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/gax-httpjson-0.51.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-api-client-1.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-auth-library-credentials-0.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-auth-library-oauth2-http-0.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-cloud-core-1.52.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-cloud-core-http-1.52.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-cloud-datastore-1.52.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-http-client-1.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-http-client-appengine-1.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-http-client-jackson-1.20.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-http-client-jackson2-1.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-http-client-protobuf-1.20.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/google-oauth-client-1.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/grpc-context-1.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/grpc-core-1.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/gson-2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/guava-20.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/httpclient-4.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/httpcore-4.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/joda-time-2.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/jsoup-1.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/opencensus-api-0.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/opencensus-contrib-grpc-metrics-0.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/opencensus-contrib-http-util-0.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/proto-google-cloud-datastore-v1-0.35.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/proto-google-common-protos-1.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/proto-google-iam-v1-0.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/protobuf-java-util-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/WEB-INF/lib/threetenbp-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/css/user-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/js/navigation-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/js/user-page-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/codeu-starter-project-0.0.1-SNAPSHOT/user-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/codeu/data/Datastore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/codeu/data/Datastore.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/data/Datastore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="54" column="71" lean-forward="true" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/data/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/StatsPageServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>query</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/google/codeu/data/Datastore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/StatsPageServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeu" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeu" type="462c0819:PsiDirectoryNode" />
+              <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codeu-starter-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeBusters" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551247397507" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f11fb0a4-fb04-472d-ad91-38923dd63474" name="Default Changelist" comment="" />
+      <created>1551233434483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551233434483</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24248926" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/data/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/data/Datastore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="54" column="71" lean-forward="true" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/StatsPageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
