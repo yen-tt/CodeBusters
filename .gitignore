@@ -26,6 +26,7 @@ hs_err_pid*
 .*DS_Store
 
 # IntelliJ, Eclipse and Maven files
-/BIN/
+/bin/
 /target/
+/.idea/
 .project
