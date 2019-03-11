@@ -82,14 +82,14 @@ public class Datastore {
             .addSort("timestamp", SortDirection.DESCENDING);
     PreparedQuery results = datastore.prepare(query);
 
-    List<Message> messages = helper(results);
+    List<Message> messages = messageConverter(results);
     return messages;
   }
 
   public List<Message> getAllMessages() {
     Query query = new Query("Message").addSort("timestamp", SortDirection.DESCENDING);
     PreparedQuery results = datastore.prepare(query);
-    List<Message> messages = helper(results);
+    List<Message> messages = messageConverter(results);
     return messages;
   }
 }
