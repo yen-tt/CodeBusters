@@ -46,7 +46,7 @@ public class Datastore {
     datastore.put(messageEntity);
   }
 
-  public List<Message> helper(PreparedQuery results) {
+  public List<Message> messageConverter(PreparedQuery results) {
     List<Message> messages = new ArrayList<>();
     for (Entity entity : results.asIterable()) {
 
