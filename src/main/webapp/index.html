@@ -20,19 +20,36 @@ limitations under the License.
     <meta charset="UTF-8">
     <title>CodeU 2019 Starter Project</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="/js/navigation-loader.js"></script>
   </head>
   <body onload="addLoginOrLogoutLinkToNavigation();">
     <nav>
       <ul id="navigation">
-        <li><a href="/">Home</a></li>
+        <a href="/" class="btn btn-link">Home</a>
+        <!--<li><a href="/">Home</a></li>-->
       </ul>
     </nav>
-    <h1>CodeU Starter Project</h1>
-    <p>This is the CodeU starter project. Click the links above to login and visit your page.
-    You can post messages on your page, and you can visit other user pages if you have
-    their URL.</p>
-    <p>This is your code now! Feel free to make changes, and don't be afraid to get creative!
-    You could start by modifying this page to tell the world more about your team.</p>
+    <div class="w3-card-4">
+
+      <header class="w3-container w3-blue" id="card-header">
+        <h1>CodeU Starter Project</h1>
+      </header>
+
+      <div class="w3-container" id="card-inner-p">
+        <p>This is the CodeU starter project. Click the links above to login and visit your page.
+          You can post messages on your page, and you can visit other user pages if you have
+          their URL.</p>
+        <hr />
+        <p>This is your code now! Feel free to make changes, and don't be afraid to get creative!
+          You could start by modifying this page to tell the world more about your team.</p>
+      </div>
+
+      <footer class="w3-container w3-blue" id="card-footer">
+        <h5><i>Team Code Busters</i></h5>
+      </footer>
+
+    </div>
   </body>
 </html>

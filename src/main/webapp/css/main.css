@@ -30,3 +30,16 @@ nav li {
   display: inline-block;
   margin-right: 10px
 }
+
+#card-header{
+/*
+  margin-left: 1 px;
+  margin-right: 1 px;
+  /*width: 8em;*/
+}
+
+#card-inner-p{
+}
+
+#card-footer{
+}
