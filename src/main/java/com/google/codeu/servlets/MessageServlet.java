@@ -81,6 +81,7 @@ public class MessageServlet extends HttpServlet {
         //bold text
         text = text.replace("[b]","<b>").replace("[/b]", "</b>");
 
+<<<<<<< HEAD
         //italicized text
         text = text.replace("[i]","<i>").replace("[/i]", "</i>");
 
@@ -96,4 +97,17 @@ public class MessageServlet extends HttpServlet {
         response.sendRedirect("/user-page.html?user=" + user);
     }
 
+=======
+    String user = userService.getCurrentUser().getEmail();
+    String text = Jsoup.clean(request.getParameter("text"), Whitelist.none());
+    String recipient = request.getParameter("recipient");
+    System.out.println("print recipient:");
+    System.out.println(recipient);
+    
+    Message message = new Message(user, text, recipient);
+    datastore.storeMessage(message);
+
+    response.sendRedirect("/user-page.html?user=" + recipient);
+  }
+>>>>>>> b7e11eabfdd0cc5256e72ad6c74c5c687129081f
 }
