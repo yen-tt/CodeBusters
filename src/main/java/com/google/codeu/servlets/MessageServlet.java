@@ -81,7 +81,7 @@ public class MessageServlet extends HttpServlet {
         //bold text
         text = text.replace("[b]","<b>").replace("[/b]", "</b>");
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //italicized text
         text = text.replace("[i]","<i>").replace("[/i]", "</i>");
 
