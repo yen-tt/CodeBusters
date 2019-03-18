@@ -80,8 +80,12 @@ public class MessageServlet extends HttpServlet {
     String recipient = request.getParameter("recipient");
     System.out.println("print recipient:");
     System.out.println(recipient);
+    
+    String regex = "(https?://\\S+\\.(png|jpg))";
+    String replacement = "<img src=\"$1\" />";
+    String textWithImagesReplaced = text.replaceAll(regex, replacement);
 
-    Message message = new Message(user, text, recipient);
+    Message message = new Message(user, textWithImagesReplaced, recipient);
     datastore.storeMessage(message);
 
     response.sendRedirect("/user-page.html?user=" + recipient);

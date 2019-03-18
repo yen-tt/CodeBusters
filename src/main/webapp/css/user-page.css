@@ -45,3 +45,12 @@
 .hidden {
   display: none;
 }
+
+/* Use this to ensure that the message is completely
+	displayed on one page */
+	
+.message-body img {
+  display: block;
+  margin-top: 25px;
+  max-width: 75%;
+}
