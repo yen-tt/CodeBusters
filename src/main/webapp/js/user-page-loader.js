@@ -61,6 +61,7 @@ function fetchMessages() {
           messagesContainer.innerHTML = '';
         }
         messages.forEach((message) => {
+          console.log(message);
           const messageDiv = buildMessageDiv(message);
           messagesContainer.appendChild(messageDiv);
         });
@@ -76,7 +77,7 @@ function buildMessageDiv(message) {
   const headerDiv = document.createElement('div');
   headerDiv.classList.add('message-header');
   headerDiv.appendChild(document.createTextNode(
-      message.user + ' - ' + new Date(message.timestamp)));
+      message.user + ' - ' + new Date(message.timestamp) + ' [' + message.sentiment + ']'));
 
   const bodyDiv = document.createElement('div');
   bodyDiv.classList.add('message-body');

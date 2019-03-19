@@ -25,6 +25,7 @@ public class Message {
   private String user;
   private String text;
   private long timestamp;
+  private float sentiment = -2; //default value to indicate not assigned
 
   /**
    * Constructs a new {@link Message} posted by {@code user} with {@code text} content. Generates a
@@ -32,6 +33,16 @@ public class Message {
    */
   public Message(String user, String text) {
     this(UUID.randomUUID(), user, text, System.currentTimeMillis());
+  }
+
+  public Message(String user, String text, float sentiment) {
+    this.id = UUID.randomUUID();
+    this.user = user;
+    this.text = text;
+    this.timestamp = System.currentTimeMillis();
+    this.sentiment = sentiment;
+
+    System.out.println("Message data test item 'this': " + this);
   }
 
   public Message(UUID id, String user, String text, long timestamp) {
@@ -55,5 +66,9 @@ public class Message {
 
   public long getTimestamp() {
     return timestamp;
+  }
+
+  public float getSentiment() {
+    return sentiment;
   }
 }

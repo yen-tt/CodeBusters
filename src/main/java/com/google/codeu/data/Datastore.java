@@ -43,8 +43,11 @@ public class Datastore {
     messageEntity.setProperty("user", message.getUser());
     messageEntity.setProperty("text", message.getText());
     messageEntity.setProperty("timestamp", message.getTimestamp());
+    System.out.println("Data store testing sentiment: " + message.getSentiment());
+    messageEntity.setProperty("sentiment", message.getSentiment());
 
     datastore.put(messageEntity);
+    System.out.println("Testing message entity: " + messageEntity);
   }
 
   /** Inserted Code * */
