@@ -98,6 +98,7 @@ function buildUI() {
   showMessageFormIfLoggedIn();
   fetchMessages();
   fetchAboutMe();
+  ClassicEditor.create( document.getElementById('message-input') );
 }
 
 function fetchAboutMe(){
