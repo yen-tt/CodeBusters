@@ -103,7 +103,7 @@ public class MessageServlet extends HttpServlet {
     String recipient = request.getParameter("recipient");
     System.out.println("print recipient:");
     System.out.println(recipient);
-    
+
     Message message = new Message(user, text, recipient);
     datastore.storeMessage(message);
 
