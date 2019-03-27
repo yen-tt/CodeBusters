@@ -76,6 +76,7 @@ function fetchMessages() {
 function buildMessageDiv(message) {
   const headerDiv = document.createElement('div');
   headerDiv.classList.add('message-header');
+  console.log("Test within buildMessageDive. Message contents: " + message);
   headerDiv.appendChild(document.createTextNode(
       message.user + ' - ' + new Date(message.timestamp) + ' [' + message.sentiment + ']'));
 
