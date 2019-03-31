@@ -25,7 +25,7 @@ public class Message {
   private String user;
   private String text;
   private long timestamp;
-  private float sentiment = -2; //default value to indicate not assigned
+  private float sentiment = -2; // default value to indicate not assigned
 
   /**
    * Constructs a new {@link Message} posted by {@code user} with {@code text} content. Generates a
