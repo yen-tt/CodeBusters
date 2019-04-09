@@ -64,6 +64,6 @@ public class Message {
   }
 
   public void setText(String translatedText) {
-     this.text = translatedText;
+    this.text = translatedText;
   }
 }
