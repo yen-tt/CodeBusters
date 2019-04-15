@@ -27,6 +27,8 @@ public class Message {
   private long timestamp;
   private String recipient;
   private String imageUrl;
+  private int positiveVote = 0;
+  private int negativeVote = 0;
 
   /**
    * Constructs a new {@link Message} posted by {@code user} with {@code text} content to a {@code
@@ -72,5 +74,33 @@ public void setImageUrl(String imageUrl) {
 public Object getImageUrl() {
 	// TODO Auto-generated method stub
 	return imageUrl;
+}
+
+public int getNegativeVote() {
+	return negativeVote;
+}
+
+public void setNegativeVote(int negativeVote) {
+	this.negativeVote = negativeVote;
+}
+
+public void incrementNegativeVote() {
+	this.negativeVote++;
+}
+
+public int getPositiveVote() {
+	return positiveVote;
+}
+
+public void setPositiveVote(int positiveVote) {
+	this.positiveVote = positiveVote;
+}
+
+public void incrementPositiveVote() {
+	this.positiveVote++;
+}
+
+public int getMessageScore() {
+	return this.positiveVote-this.negativeVote;
 }
 }
