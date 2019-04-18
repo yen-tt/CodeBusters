@@ -1,0 +1,2 @@
+beta_settings:
+  cloud_sql_instances: sp19-codeu-14-7857:us-central1:taxoverflow-database=tcp:52785
