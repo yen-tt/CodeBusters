@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -50,22 +51,32 @@ public class CloudSqlServlet extends HttpServlet {
     PrintWriter out = resp.getWriter();
     resp.setContentType("text/plain");
 
-    if (request.getParameter("getQuestion") != null) {
+    if (req.getParameter("getQuestion") != null) {
       // Perform get Question.
-      final String selectQuestionSql = "SELECT postId "
-          + "FROM POST "
-          + "WHERE header = '" + req.body.header + "'";
+      final String selectQuestionSql =
+          "SELECT postId " + "FROM POST " + "WHERE header = '" + req.body.header + "'";
 
-      try(ResultSet rs = conn.prepareStatement(selectQuestionSql).executeQuery()){
-          System.out.println("Query successfully completed");
-          String queryResult = rs.getString(1);
-          resp.body.queryResult = queryResult;
+      try (ResultSet rs = conn.prepareStatement(selectQuestionSql).executeQuery()) {
+        System.out.println("Query successfully completed");
+        String queryResult = rs.getString(1);
+        resp.body.queryResult = queryResult;
 
-      }catch(SQLException e){
-          throw new ServletException("SQL error", e);
+      } catch (SQLException e) {
+        throw new ServletException("SQL error", e);
+      }
+    } else if (req.getParameter("getMember") != null) {
+      // Perform get Member.
+      final String selectMemberSql =
+          "SELECT profileId " + "FROM PROFILE " + "WHERE email = '" + req.body.email + "'";
+
+      try (ResultSet rs = conn.prepareStatement(selectMemberSql).executeQuery()) {
+        System.out.println("Query successfully completed");
+        String queryResult = rs.getString(1);
+        resp.body.queryResult = queryResult;
+      } catch (SQLException e) {
+        throw new ServletException("SQL error", e);
       }
     }
-
   }
 
   @Override
@@ -77,45 +88,44 @@ public class CloudSqlServlet extends HttpServlet {
       return; // ignore the request for favicon.ico
     }
 
-
-    if (request.getParameter("saveAnswer") != null) {
+    if (req.getParameter("saveAnswer") != null) {
       // Perform save Answer.
       final String createAnswerSql =
-          "INSERT INTO ANSWERS (postId, answer) " +
-          "VALUES ( " +
-          req.body.postID + ", " +
-          req.body.answer + " )";
+          "INSERT INTO ANSWERS (postId, answer) "
+              + "VALUES ( "
+              + req.body.postID
+              + ", "
+              + req.body.answer
+              + " )";
 
-      try(ResultSet rs = conn.prepareStatement(createAnswerSql)){
+      try (ResultSet rs = conn.prepareStatement(createAnswerSql)) {
         System.out.println("Query successfully completed");
         conn.createStatement().executeUpdate(createAnswerSql);
 
-      }catch(SQLException e){
+      } catch (SQLException e) {
         throw new ServletException("SQL error", e);
       }
 
-    }
-    else if (request.getParameter("saveQuestion") != null) {
+    } else if (req.getParameter("saveQuestion") != null) {
       // Perform save Question.
       final String createQuestionSql =
-          "INSERT INTO POST (memberId, header, pointTotal) " +
-              "VALUES ( " +
-              req.body.memberId + ", " +
-              req.body.header + ", " +
-              req.body.pointTotal + " )";
+          "INSERT INTO POST (memberId, header, pointTotal) "
+              + "VALUES ( "
+              + req.body.memberId
+              + ", "
+              + req.body.header
+              + ", "
+              + req.body.pointTotal
+              + " )";
 
-      try(ResultSet rs = conn.prepareStatement(createQuestionSql)){
+      try (ResultSet rs = conn.prepareStatement(createQuestionSql)) {
         System.out.println("Query successfully compiled");
         conn.createStatement().executeUpdate(createQuestionSql);
 
-      }catch(SQLException e){
+      } catch (SQLException e) {
         throw new ServletException("SQL error", e);
       }
-
     }
-
-
-
   }
 
   @Override
@@ -127,27 +137,24 @@ public class CloudSqlServlet extends HttpServlet {
       return; // ignore the request for favicon.ico
     }
 
-
-    if (request.getParameter("updatePoints") != null) {
+    if (req.getParameter("updatePoints") != null) {
       // Perform save Answer.
       final String updatePointsSql =
-          "UPDATE POST " +
-              "SET ( pointTotal = " +
-              req.body.pointTotal + " )" +
-              "WHERE postId = " +
-              req.body.postId;
+          "UPDATE POST "
+              + "SET ( pointTotal = "
+              + req.body.pointTotal
+              + " )"
+              + "WHERE postId = "
+              + req.body.postId;
+
+      try (ResultSet rs = conn.prepareStatement(updatePointsSql)) {
+        System.out.println("Query successfully compiled");
+        conn.createStatement().executeUpdate(updatePointsSql);
+
+      } catch (SQLException e) {
+        throw new ServletException("SQL error", e);
+      }
     }
-
-    try(ResultSet rs = conn.prepareStatement(updatePointsSql)){
-      System.out.println("Query successfully compiled");
-      conn.createStatement().executeUpdate(updatePointsSql);
-
-    }catch(SQLException e){
-      throw new ServletException("SQL error", e);
-    }
-
-
-
   }
 
   @Override
@@ -165,7 +172,8 @@ public class CloudSqlServlet extends HttpServlet {
             + "ID INT IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED, "
             + "profileId AS 'UID' + RIGHT('00000000' + CAST(ID AS VARCHAR(8)), 8) PERSISTED, "
             + "first VARCHAR NOT NULL, "
-            + "last VARCHAR NOT NULL,  isCPA BIT not NULL, "
+            + "last VARCHAR NOT NULL,  isCPA BIT NOT NULL, "
+            + "email NVARCHAR NOT NULL, "
             + "PRIMARY KEY (profileId) );";
     final String createPostTableSql =
         "CREATE TABLE IF NOT EXISTS POST ( "

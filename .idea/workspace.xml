@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11fb0a4-fb04-472d-ad91-38923dd63474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/CloudSqlServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/CloudSqlServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,6 +11,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -37,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/CloudSqlServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="179">
+              <caret line="82" column="39" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,6 +87,8 @@
       <find>buildMessageDiv</find>
       <find>fetch</find>
       <find>conn</find>
+      <find>response</find>
+      <find>request</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,9 +293,9 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.27896994" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24678111" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2879518" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.41445783" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32891566" />
@@ -480,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/google/codeu/servlets/CloudSqlServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="179">
+          <caret line="82" column="39" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
