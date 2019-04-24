@@ -25,14 +25,12 @@
             <p id="message">MESSAGE HERE</p>
             <div>
             	<div class="reply">
-            	
             		<img src="url" width="50" height="50">
-            		<div>
-            			<textarea placeholder="Enter comment(s) here..." cols="30" rows="6"></textarea>
-            			<button class="submit-reply">Submit</button>
-            		</div>
+            		<form id="message-form" action="/reply" method="POST" class="hidden">
+      					<textarea name="text" id="reply-input" placeholder="Enter comment(s) here..." cols="30" rows="6"></textarea>
+      					<input type="submit" value="Submit" class="submit-reply">
+    				</form>
             	</div>
-            
             </div>
         </div>
         <div class="body-right-section">

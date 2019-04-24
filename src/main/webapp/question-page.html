@@ -28,8 +28,10 @@
                     <span class="slider round"></span>
                 </label>
             </div>
-            <textarea placeholder="Enter question(s) here..." cols="30" rows="10"></textarea>
-            <button class="submit-btn">Submit</button>
+            <form id="message-form" action="/question" method="POST" class="hidden">
+      			<textarea id="message-input" placeholder="Enter question(s) here..." cols="30" rows="10"></textarea>
+      			<input type="submit" value="Submit" class="submit-btn">
+    		</form>
         </div>
         <div class="body-right-section">
         	<p>Related Questions Here:</p>
