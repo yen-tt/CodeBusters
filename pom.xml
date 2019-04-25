@@ -36,7 +36,7 @@ limitations under the License.
           INSTANCE_CONNECTION_NAME from Cloud Console > SQL > Instance Details > Properties
           or `gcloud sql instances describe <instance> | grep connectionName`
       -->
-    <INSTANCE_CONNECTION_NAME> sp19-codeu-14-7857:us-central1:taxoverflow-database</INSTANCE_CONNECTION_NAME>
+    <INSTANCE_CONNECTION_NAME>sp19-codeu-14-7857:us-central1:taxoverflow-database</INSTANCE_CONNECTION_NAME>
     <user>root</user>
     <password>devPW123</password>
     <database>taxoverflow-database</database>

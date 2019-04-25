@@ -28,6 +28,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.JsonObject;
+
 // [START gae_java8_mysql_app]
 @SuppressWarnings("serial")
 // With @WebServlet annotation the webapp/WEB-INF/web.xml is no longer required.
@@ -82,20 +84,26 @@ public class CloudSqlServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest req, HttpServletResponse resp)
       throws IOException, ServletException {
+//    String requestBody = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+    JsonObject requestBody = parseJsonResponseBody(req);
+
 
     String path = req.getRequestURI();
     if (path.startsWith("/favicon.ico")) {
       return; // ignore the request for favicon.ico
     }
 
-    if (req.getParameter("saveAnswer") != null) {
+//    if (req.getParameter("saveAnswer") != null) {
+      if(req.getRequestURI().startsWith("/reply")){
       // Perform save Answer.
       final String createAnswerSql =
           "INSERT INTO ANSWERS (postId, answer) "
               + "VALUES ( "
-              + req.body.postID
+//              + req.body.postID
+              + requestBody.getJsonNumber("postID")
               + ", "
-              + req.body.answer
+//              + req.body.answer
+              + requestBody.getJsonString("answer")
               + " )";
 
       try (ResultSet rs = conn.prepareStatement(createAnswerSql)) {
@@ -106,7 +114,8 @@ public class CloudSqlServlet extends HttpServlet {
         throw new ServletException("SQL error", e);
       }
 
-    } else if (req.getParameter("saveQuestion") != null) {
+//    } else if (req.getParameter("saveQuestion") != null) {
+      } else if (req.getRequestURI().starsWith("/question")) {
       // Perform save Question.
       final String createQuestionSql =
           "INSERT INTO POST (memberId, header, pointTotal) "
