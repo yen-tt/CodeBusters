@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+html, body {
+    margin: 0;
+    background: #F2F2F2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+h1 {
+    padding: 0px;
+    border: 0px;
+}
+
+.welcome-user {
+    text-align: left;
+}
+
+.website-title {
+    text-align: right;
+}
+
+.header-section {
+    background: #FDCA47;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.body-section {
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+textarea {
+	width: 200px;
+	height: 30px;
+		
+}
+
+.login {
+	width: 100px;
+	height: 30px;
+	background: #93C66A;
+	font-size: 12pt;
+	border-radius: 10px;
+}

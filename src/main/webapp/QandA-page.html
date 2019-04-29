@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <meta charset="ISO-8859-1">
-    <link rel="stylesheet" href="/css/question-page.css">
-    <title>Question Submission</title>
+    <link rel="stylesheet" href="/css/QandA-page.css">
+    <title>Q&A Submission</title>
 </head>
 <body>
     <div class="header-section">
@@ -21,20 +21,20 @@
                 <button>Form 1040EZ</button>
                 <button>Form W-4</button>
                 <button>Form W-2</button>
-                <button>Bussiness</button>
-                <button>something</button>
+                <button>Business</button>
+                <button>Other</button>
             </div>
+            
+            <p id="message">MESSAGE HERE</p>
             <div>
-                <p>Anonymous?</p>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+            	<div class="reply">
+            		<img src="url" width="50" height="50">
+            		<form id="message-form" action="/reply" method="POST" class="hidden">
+      					<textarea name="text" id="reply-input" placeholder="Enter comment(s) here..." cols="30" rows="6"></textarea>
+      					<input type="submit" value="Submit" class="submit-reply">
+    				</form>
+            	</div>
             </div>
-            <form id="message-form" action="/question" method="POST" class="hidden">
-      			<textarea id="message-input" placeholder="Enter question(s) here..." cols="30" rows="10"></textarea>
-      			<input type="submit" value="Submit" class="submit-btn">
-    		</form>
         </div>
         <div class="body-right-section">
         	<p>Related Questions Here:</p>

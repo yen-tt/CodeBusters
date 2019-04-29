@@ -12,18 +12,25 @@ h1 {
     border: 0px;
 }
 
-.welcome-user {
+#welcome-user {
     text-align: left;
 }
 
 .website-title {
     text-align: right;
+    margin: 0;
 }
 
 .header-section {
     background: #FDCA47;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 180px;
+}
+
+.header-right-section {
+	display: grid;
+    grid-template-rows: 1fr 50px;
+    justify-items: center;
 }
 
 .body-section {
