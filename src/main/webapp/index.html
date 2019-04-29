@@ -18,23 +18,39 @@ limitations under the License.
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>CodeU 2019 Starter Project</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/navigation-loader.js"></script>
+    <title>TaxOverflow</title>
+     <script src="/js/index-loader.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
   </head>
-  <body onload="addLoginOrLogoutLinkToNavigation();">
-    <nav>
-      <ul id="navigation">
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-    <h1>CodeU Starter Project</h1>
-    <p>This is the CodeU starter project. Click the links above to login and visit your page.
-    You can post messages on your page, and you can visit other user pages if you have
-    their URL.</p>
-    <p>This is your code now! Feel free to make changes, and don't be afraid to get creative!
-    You could start by modifying this page to tell the world more about your team.</p>
-
-  <p>Hello World!</p>
+  <body onload="addLoginOrLogoutLinkToHeader()">
+    <div class="header-section">
+        <h1 id="welcome-user">Welcome User!</h1>
+        <div class="header-right-section" id="header">
+        	<h1 class="website-title">TaxOverflow</h1>
+        	<a href="index.html">Home Page</a>
+        </div>
+    </div>
+    
+    <div>
+    	<h1>Got A Question?:</h1>
+    	 <button class="yours" onclick="getQuestionPage()">Post Question</button>
+    </div>
+    
+    <div class= "question-header-section">
+    	<h1>Submitted Questions:</h1>
+    	<div class="legend">
+    		<h1>Yours: </h1>
+    		<div class="yours-box"></div>
+    		<h1>Others: </h1>
+    		<div class="others-box"></div>
+    	</div>
+    </div>
+    
+    <div id="question-container">
+    	<button class="yours" onclick="getQandAPage()">This is a question box</button>
+    	<button onclick="getQandAPage()">This is a question box</button>
+    	<button onclick="getQandAPage()">This is a question box</button>
+    	<button onclick="getQandAPage()">This is a question box</button>
+    </div>
   </body>
 </html>
