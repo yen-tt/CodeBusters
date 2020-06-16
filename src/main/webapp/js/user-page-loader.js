@@ -50,7 +50,14 @@ function showMessageFormIfLoggedIn() {
 
 /** Fetches messages and add them to the page. */
 function fetchMessages() {
-  const url = '/messages?user=' + parameterUsername;
+//  const url = '/messages?user=' + parameterUsername;
+
+  const parameterLanguage = urlParams.get('language');
+  let url = '/messages?user=' + parameterUsername;
+  if(parameterLanguage) {
+    url += '&language=' + parameterLanguage;
+  }
+
   fetch(url)
       .then((response) => {
         return response.json();
@@ -98,6 +105,7 @@ function buildUI() {
   showMessageFormIfLoggedIn();
   fetchMessages();
   fetchAboutMe();
+  buildLanguageLinks();
 }
 
 function fetchAboutMe(){
@@ -114,4 +122,25 @@ function fetchAboutMe(){
 	document.getElementById('about-me-form').classList.remove('hidden');
 
   });
+}
+
+function buildLanguageLinks(){
+  console.log("entered the build language link function");
+  const userPageUrl = '/user-page.html?user=' + parameterUsername;
+  const languagesListElement  = document.getElementById('languages');
+  languagesListElement.appendChild(createListItem(createLink(
+       userPageUrl + '&language=en', 'English')));
+  console.log("added link to english");
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=zh', 'Chinese')));
+      console.log("added link to chinese");
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=hi', 'Hindi')));
+      console.log("added link to hindi");
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=es', 'Spanish')));
+      console.log("added link to spanish");
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=ar', 'Arabic')));
+      console.log("added link to arabic");
 }
