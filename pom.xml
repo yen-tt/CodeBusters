@@ -32,55 +32,75 @@ limitations under the License.
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <failOnMissingWebXml>false</failOnMissingWebXml>
+     <!--
+          INSTANCE_CONNECTION_NAME from Cloud Console > SQL > Instance Details > Properties
+          or `gcloud sql instances describe <instance> | grep connectionName`
+      -->
+    <INSTANCE_CONNECTION_NAME>sp19-codeu-14-7857:us-central1:taxoverflow-database</INSTANCE_CONNECTION_NAME>
+    <user>root</user>
+    <password>devPW123</password>
+    <database>taxoverflow-database</database>
+        <sqlURL>jdbc:mysql://google/${database}?cloudSqlInstance=${INSTANCE_CONNECTION_NAME}&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=${user}&amp;password=${password}&amp;useSSL=false</sqlURL>
   </properties>
 
-  <dependencies>
+    <dependencies>
 
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
+      <dependency>                        <!-- http://dev.mysql.com/doc/connector-j/en/ -->
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>6.0.5</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud.sql</groupId>
+        <artifactId>mysql-socket-factory-connector-j-6</artifactId>
+        <version>1.0.12</version>
+      </dependency>
 
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>1.9.59</version>
-    </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.1.0</version>
+        <scope>provided</scope>
+      </dependency>
 
-    <dependency>
-      <groupId>org.jsoup</groupId>
-      <artifactId>jsoup</artifactId>
-      <version>1.8.3</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.cloud</groupId>
-      <artifactId>google-cloud-datastore</artifactId>
-      <version>1.52.0</version>
-    </dependency>
-
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
+      <dependency>
         <groupId>com.google.appengine</groupId>
-        <artifactId>appengine-maven-plugin</artifactId>
+        <artifactId>appengine-api-1.0-sdk</artifactId>
         <version>1.9.59</version>
-      </plugin>
-      <plugin>
-        <groupId>com.diffplug.spotless</groupId>
-        <artifactId>spotless-maven-plugin</artifactId>
-        <version>1.16.0</version>
-        <configuration>
-          <java>
-              <googleJavaFormat>
-              </googleJavaFormat>
-          </java>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.8.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-datastore</artifactId>
+        <version>1.52.0</version>
+      </dependency>
+
+    </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>com.google.appengine</groupId>
+          <artifactId>appengine-maven-plugin</artifactId>
+          <version>1.9.59</version>
+        </plugin>
+        <plugin>
+          <groupId>com.diffplug.spotless</groupId>
+          <artifactId>spotless-maven-plugin</artifactId>
+          <version>1.16.0</version>
+          <configuration>
+            <java>
+                <googleJavaFormat>
+                </googleJavaFormat>
+            </java>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </project>
